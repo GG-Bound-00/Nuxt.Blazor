@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36429.23 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nuxt.Blazor.PlaySite", "Nuxt.Blazor.PlaySite\Nuxt.Blazor.PlaySite.csproj", "{17CBEB01-6F51-4D06-8920-D0917EC98B9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nuxt.Blazor.Components", "Nuxt.Blazor.Components\Nuxt.Blazor.Components.csproj", "{3335999D-9F57-4816-8848-BD7F63D89A7E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17CBEB01-6F51-4D06-8920-D0917EC98B9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17CBEB01-6F51-4D06-8920-D0917EC98B9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17CBEB01-6F51-4D06-8920-D0917EC98B9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17CBEB01-6F51-4D06-8920-D0917EC98B9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3335999D-9F57-4816-8848-BD7F63D89A7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3335999D-9F57-4816-8848-BD7F63D89A7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3335999D-9F57-4816-8848-BD7F63D89A7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3335999D-9F57-4816-8848-BD7F63D89A7E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3752866F-D319-4018-915F-CF4EE05DAF13}
+	EndGlobalSection
+EndGlobal
