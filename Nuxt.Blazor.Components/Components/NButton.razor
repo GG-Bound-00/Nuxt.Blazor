@@ -1,0 +1,19 @@
+﻿@namespace Nuxt.Blazor.Components
+
+<button class="bg-primary-100 text-error" @onclick="OnClickHandler">@ChildContent</button>
+
+@code {
+    [Parameter]
+    public RenderFragment? ChildContent { get; set; }
+
+    [Parameter]
+    public EventCallback OnClick { get; set; }
+
+    async Task OnClickHandler()
+    {
+        if (OnClick.HasDelegate)
+        {
+            await OnClick.InvokeAsync(null);
+        }
+    }
+}

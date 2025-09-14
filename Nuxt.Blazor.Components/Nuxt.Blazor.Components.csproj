@@ -10,6 +10,18 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="9.0.9" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Enums\" />
+    <Folder Include="wwwroot\css\_gen\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <GeneratedCssFolder>$(MSBuildProjectDirectory)\wwwroot\css\_gen</GeneratedCssFolder>
+  </PropertyGroup>
+  <Target Name="CleanGeneratedAssets" BeforeTargets="CompileStaticAssets">
+    <Message Text="Cleaning up the generated resource folder: $(GeneratedCssFolder)" Importance="high" />
+    <RemoveDir Directories="$(GeneratedCssFolder)" Condition="Exists('$(GeneratedCssFolder)')" />
+    <Message Text="Cleanup completed" Importance="high" />
+  </Target>
   <Target Name="CompileStaticAssets" AfterTargets="AfterBuild">
     <Exec Command="webcompiler -r Styles -c webcompilerconfiguration.json" StandardOutputImportance="high" />
   </Target>
