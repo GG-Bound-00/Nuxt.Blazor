@@ -364,3 +364,4 @@ FodyWeavers.xsd
 
 # Generated css
 /Nuxt.Blazor.Components/wwwroot/css/_gen/
+/Nuxt.Blazor.Web/wwwroot/css/_gen/

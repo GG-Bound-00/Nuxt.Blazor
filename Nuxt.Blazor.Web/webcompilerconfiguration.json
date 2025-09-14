@@ -52,7 +52,7 @@
     ]
   },
   "Output": {
-    "Preserve": false,
+    "Preserve": true,
     "Directory": "./wwwroot/css/_gen"
   }
 }
