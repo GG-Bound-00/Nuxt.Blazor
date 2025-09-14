@@ -6,8 +6,18 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="Styles\" />
+    <Folder Include="wwwroot\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Nuxt.Blazor.Components\Nuxt.Blazor.Components.csproj" />
+  </ItemGroup>
+  <Target Name="CleanGeneratedAssets" BeforeTargets="CompileStaticAssets">
+    <Message Text="Cleaning up the generated resource folder: $(GeneratedCssFolder)" Importance="high" />
+    <RemoveDir Directories="$(GeneratedCssFolder)" Condition="Exists('$(GeneratedCssFolder)')" />
+    <Message Text="Cleanup completed" Importance="high" />
+  </Target>
   <Target Name="CompileStaticAssets" AfterTargets="AfterBuild">
+    <Message Text="Building SCSS files" Importance="high" />
     <Exec Command="webcompiler -r Styles -c webcompilerconfiguration.json" StandardOutputImportance="high" />
   </Target>
 </Project>

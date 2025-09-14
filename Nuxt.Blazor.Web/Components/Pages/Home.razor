@@ -1,7 +1,13 @@
 ﻿@page "/"
+@using Nuxt.Blazor.Components
+@rendermode InteractiveServer
 
 <PageTitle>Home</PageTitle>
 
-<h1>Hello, world!</h1>
+<ThemeProvider IsDarkMode="@isDarkMode" />
+<NButton OnClick="ToggleThemeAsync">Toggle Theme</NButton>
 
-Welcome to your new app.
+<div class="bg-default" style="width:400px;height:400px">
+    <p class="text-default">text-default</p>
+    <p class="text-success">text-success</p>
+</div>
